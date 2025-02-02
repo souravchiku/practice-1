@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two cards per row */
+  gap: 10px; /* Space between cards */
+  overflow-y: auto; /* Enables scrolling */
+  max-height: 500px; /* Adjust as needed */
+  width: 50%;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.card {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+  background-color: #f9f9f9;
+}
