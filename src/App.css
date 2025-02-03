@@ -22,3 +22,13 @@
   text-align: center;
   background-color: #f9f9f9;
 }
+
+.pageButton{
+  padding: 10px 15px;
+  cursor: pointer;
+  margin: 10px;
+  
+}
+.pagination{
+  display: flex;
+}
