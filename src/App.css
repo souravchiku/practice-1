@@ -35,3 +35,7 @@
 .selected{
   background-color: aqua;
 }
+
+.disable{
+  opacity: 0;
+}
