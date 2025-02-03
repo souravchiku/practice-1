@@ -20,6 +20,8 @@ export default function App() {
   const selectedPage = (selectedPage)=>{
     setPage(selectedPage)
   }
+
+  console.log(products.length)
   return (
     <div className="container">
       {products.length > 0 && (
@@ -38,7 +40,7 @@ export default function App() {
 
                 <span className="pageButton">👈</span>
                 <span  className="pageButton">{[...Array(products.length/10)].map((_,i)=>{
-                  return <span className="pageButton" onClick={()=>selectedPage(i+1)}  key={i}>{i + 1}</span>
+                  return <span className={`pageButton ${page === i+1 ?"selected":""}`} onClick={()=>selectedPage(i+1)}  key={i}>{i + 1}</span>
                 })}</span>
                 <span  className="pageButton">👉</span>
               </div>

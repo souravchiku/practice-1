@@ -32,3 +32,6 @@
 .pagination{
   display: flex;
 }
+.selected{
+  background-color: aqua;
+}
